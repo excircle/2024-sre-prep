@@ -1,7 +1,6 @@
 import React from "react"
 import { useRouter } from 'next/router';
-import HomePage from "./homepage/HopePage";
-import Basics from "./basics";
+import HomePage from "./homepage/HomePage";
 
 export default function Home() {
   const router = useRouter();
@@ -10,8 +9,6 @@ export default function Home() {
     switch (router.pathname) {
       case '/':
         return <HomePage />;
-      case '/basics':
-        return <Basics />;
       default:
         return <div>Page not found</div>;
     }
