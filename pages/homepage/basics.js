@@ -7,7 +7,7 @@ export default function Basics() {
             <div class="container mx-auto p-5">
                 <ul class="grid grid-cols-3 gap-4 pl-64">
                     <li>
-                        <Link href="#">
+                        <Link href="/basics/how-does-a-browser-query-work">
                             <p className="text-blue-500 hover:underline cursor-pointer font-bold">How does a browser query work?</p>
                         </Link>
                     </li>
