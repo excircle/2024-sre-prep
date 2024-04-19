@@ -1,7 +1,7 @@
 import React from "react"
 import { useRouter } from 'next/router';
 import HomePage from "./homepage/HopePage";
-import Basics from "./basics/Basics";
+import Basics from "./basics";
 
 export default function Home() {
   const router = useRouter();
