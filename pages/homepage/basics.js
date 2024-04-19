@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Basics() {
     return (
-        <>
+        <div className="py-2">
             <p className="text-2xl pl-96">Basics</p>
             <div class="container mx-auto p-5">
                 <ul class="grid grid-cols-3 gap-4 pl-64">
@@ -38,6 +38,6 @@ export default function Basics() {
                     </li>
                 </ul>
             </div>
-        </>
+        </div>
     )
 }
