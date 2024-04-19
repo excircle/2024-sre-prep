@@ -18,13 +18,9 @@ export default function Home() {
   };
 
   return (
-    <React.Fragment>
-      <p className="text-2xl">SRE Prep</p>
-      <hr></hr>
-      <div>
+    <div className="py-8 text-center">
         <h1>Next.js Example</h1>
         {renderComponent()}
-      </div>
-    </React.Fragment>
+    </div>
   )
 }
