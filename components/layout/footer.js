@@ -6,6 +6,12 @@ export default function Footer() {
             <hr></hr>
             <footer className="flex justify-center">
                 <div className="flex">
+                <span>
+                        <Link href="/">
+                            <p className="text-blue-500 hover:underline cursor-pointer">Home</p>
+                        </Link>
+                    </span>
+                    <span className="mx-2">|</span>
                     <span>
                         <Link href="#">
                             <p className="text-blue-500 hover:underline cursor-pointer">About</p>
