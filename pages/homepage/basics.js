@@ -4,8 +4,8 @@ export default function Basics() {
     return (
         <div className="py-2">
             <p className="text-2xl pl-96">Basics</p>
-            <div class="container mx-auto p-5">
-                <ul class="grid grid-cols-3 gap-4 pl-64">
+            <div className="container mx-auto p-5">
+                <ul className="grid grid-cols-3 gap-4 pl-64">
                     <li>
                         <Link href="/basics/how-does-a-browser-query-work">
                             <p className="text-blue-500 hover:underline cursor-pointer font-bold">How does a browser query work?</p>
