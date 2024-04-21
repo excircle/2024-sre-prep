@@ -22,12 +22,7 @@ export default function Category() {
 
     return (
         <>
-            <p className="text-2xl py-2 text-center">{category.charAt(0).toUpperCase() + category.slice(1)} Flashcards!</p>
-            {questions.map((item, index) => {
-                return (
-                    <p key={index} className="text-center">Question: '{item.question}', Answer: '{item.answer}', Desc: '{item.description}'</p>
-                )
-            })}
+            <p className="text-2xl py-2 text-center">{category} Flashcards!</p>
         </>
     );
 }
