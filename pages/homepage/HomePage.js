@@ -1,6 +1,6 @@
 import Basics from "./basics";
-import Linux
- from "./linux";
+import Linux from "./linux";
+
 export default function HomePage() {
     return (
         <>

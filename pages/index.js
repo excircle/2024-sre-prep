@@ -13,7 +13,7 @@ export default function Home() {
         return <HomePage />;
       case '/flashcards':
         return <Flashcards />;
-      case '/flashcards':
+      case '/checklist':
         return <Checklist />;
       default:
         return <div>Page not found</div>;
