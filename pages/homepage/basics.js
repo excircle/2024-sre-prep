@@ -12,7 +12,7 @@ export default function Basics() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#">
+                        <Link href="/basics/how-does-tcp-work">
                             <p className="text-blue-500 hover:underline cursor-pointer font-bold">How does TCP work?</p>
                         </Link>
                     </li>
