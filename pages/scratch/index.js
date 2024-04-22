@@ -1,32 +1,38 @@
-import { getCategories } from "../api/flashcardsApi";
-import { useEffect, useState } from "react";
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import gfm from 'remark-gfm';
 
-export default function Scratch() {
-    const [categories, setCategories] = useState(null);
-    const [Loading, setLoading] = useState(true);
+export default function Category() {
 
-    useEffect(() => {
-        async function generateCategories() {
-            const response = await getCategories()
-            const data = await response
-            setCategories(data.categories)
-            setLoading(false)
-        }
-        generateCategories()
-    }, [])
+    const markdownContent = `
+# GitHub-style Markdown Example!
 
-    if (Loading) {
-        return <h1 className="text-center text-2xl">LOADING PAGE</h1>
-    }
+This text includes **bold text** and *italic text*.
 
+- [ ] task list item not done
+- [x] task list item done
+
+### Code Block
+
+\`\`\`javascript
+console.log("Hello, world!");
+\`\`\`
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
+This is a ~~strikethrough~~ example.
+`;
     return (
-        <>
-            <p className="text-2xl py-2 text-center">Query results go below this text!</p>
-            {categories.map((item, index) => {
-                return (
-                    <p key={index} className="text-center">{item}</p>
-                )
-            })}
-        </>
-    )
+        <div className="flex justify-center items-center py-8">
+            <div className="border border-black border-opacity-25 w-3/4 p-6">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {markdownContent}
+                </ReactMarkdown>
+            </div>
+        </div>
+    );
 }

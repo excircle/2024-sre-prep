@@ -25,22 +25,21 @@ export default function Choose() {
             <div className="border border-black border-opacity-25 w-3/4 h-96">
                 <p className="text-2xl text-center py-2">This is the Flashcards Choose Page!</p>
                 <div className="flex justify-center items-center space-x-4">
-
-                <div className="container mx-auto p-5">
-                <ul className="grid grid-cols-2 gap-4 pl-96">
-                    {categories.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <div className="border border-black border-opacity-25 w-32 h-32 flex justify-center items-center">
-                                    <Link href={`/flashcards/${item.category}`}>
-                                        <p className="text-2xl text-center py-2">{item.category}</p>
-                                    </Link>
-                                </div>
-                            </li>
-                        )    
-                    })}
-                </ul>
-            </div>
+                    <div className="container mx-auto p-5">
+                        <ul className="grid grid-cols-2 gap-4 pl-96">
+                            {categories.map((item, index) => {
+                                return (
+                                    <li key={index}>
+                                        <div className="border border-black border-opacity-25 w-32 h-32 flex justify-center items-center">
+                                            <Link href={`/flashcards/${item.category}`}>
+                                                <p className="text-2xl text-center py-2">{item.category}</p>
+                                            </Link>
+                                        </div>
+                                    </li>
+                                )    
+                            })}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
